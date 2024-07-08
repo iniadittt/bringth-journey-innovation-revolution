@@ -7,10 +7,12 @@ export function Placeholders() {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {};
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => e.preventDefault();
   return (
-    <PlaceholdersAndVanishInput
+    <div className="w-full px-4">
+      <PlaceholdersAndVanishInput
       placeholders={placeholders}
       onChange={handleChange}
       onSubmit={onSubmit}
     />
+    </div>
   );
 }

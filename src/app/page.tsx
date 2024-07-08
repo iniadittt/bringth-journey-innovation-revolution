@@ -5,7 +5,7 @@ import { Placeholders } from "@/components/Placeholders";
 export default function Home() {
   return (
     <main className="bg-slate-900">
-      <BackgroundBeams />
+      <BackgroundBeams className="absolute" />
       <div className="w-full h-screen relative z-10 flex flex-col gap-0 justify-center items-center">
         <h1 className="font-bold text-9xl uppercase tracking-tight text-slate-200">
           {appData.title}
