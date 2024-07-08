@@ -3,7 +3,7 @@ import { GeistSans } from "geist/font/sans";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "BJIR | Bringth Journey Innovation & Revolution",
+  title: "Bringth Journey Innovation & Revolution | BJIR",
   description:
     "Our Community to become a reliable developer but lazy at coding",
   publisher: "BJIR",
