@@ -90,8 +90,8 @@ export const teamsData = [
   [
     {
       id: 'team-1',
-      imgUrl: '/project1.jpg',
-      title: 'Website',
+      imgUrl: '/team/adit.png',
+      title: 'Aditya Bayu',
     },
     {
       id: 'team-2',

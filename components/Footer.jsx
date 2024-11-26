@@ -18,12 +18,12 @@ const Footer = () => (
         <h4 className="font-bold md:text-[64px] text-[44px] text-white">
           Gunakan jasa kami? Hubungi disini
         </h4>
-        <button
-          type="button"
+        <a
+          href="https://wa.me/+6283897916745"
           className="flex items-center h-fit py-4 px-6 bg-green-500 rounded-[32px] gap-[12px]"
         >
           <span className="font-normal text-[16px] text-white">Whatsapp</span>
-        </button>
+        </a>
       </div>
 
       <div className="flex flex-col">
