@@ -11,7 +11,6 @@ import { exploreWorlds } from '../constants';
 
 const Explore = () => {
   const [active, setActive] = useState('project-2');
-
   return (
     <section className={`${styles.paddings}`} id="explore">
       <motion.div
@@ -30,15 +29,17 @@ const Explore = () => {
           textStyles="text-center"
         />
         <div className="mt-[50px] flex lg:flex-row flex-col gap-5">
-          {exploreWorlds.map((world, index) => (
-            <ExploreCard
-              key={world.id}
-              {...world}
-              index={index}
-              active={active}
-              handleClick={setActive}
-            />
-          ))}
+          {exploreWorlds.map((world, index) => {
+            return (
+              <ExploreCard
+                key={world.id}
+                {...world}
+                index={index}
+                active={active}
+                handleClick={setActive}
+              />
+            );
+          })}
         </div>
       </motion.div>
     </section>

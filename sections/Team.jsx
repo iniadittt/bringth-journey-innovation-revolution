@@ -14,10 +14,12 @@ const Team = () => {
   });
 
   const handleClick = (key, value) => {
-    setActiveState((prevState) => ({
-      ...prevState,
-      [key]: value,
-    }));
+    setActiveState((prevState) => {
+      return {
+        ...prevState,
+        [key]: value,
+      };
+    });
   };
 
   return (
@@ -34,19 +36,29 @@ const Team = () => {
           textStyles="text-center"
         />
         <TitleText title="Tim Kami" textStyles="text-center" />
-        {teamsData?.map((teams, idx) => (
-          <div key={idx} className="mt-[50px] flex lg:flex-row flex-col gap-5">
-            {teams.map((team, index) => (
-              <ExploreCard
-                key={team.id}
-                {...team}
-                index={index}
-                active={activeState[`team${idx + 1}`]}
-                handleClick={(value) => handleClick(`team${idx + 1}`, value)}
-              />
-            ))}
-          </div>
-        ))}
+        {teamsData?.map((teams, idx) => {
+          return (
+            <div
+              key={idx}
+              className="mt-[50px] flex lg:flex-row flex-col gap-5"
+            >
+              {teams.map((team, index) => {
+                return (
+                  <ExploreCard
+                    key={team.id}
+                    {...team}
+                    index={index}
+                    active={activeState[`team${idx + 1}`]}
+                    handleClick={(value) => {
+                      handleClick(`team${idx + 1}`, value);
+                    }}
+                    description={team.role}
+                  />
+                );
+              })}
+            </div>
+          );
+        })}
       </motion.div>
     </section>
   );
