@@ -9,8 +9,8 @@ import { teamsData } from '../constants';
 
 const Team = () => {
   const [activeState, setActiveState] = useState({
-    team1: 'team-1',
-    team2: 'team-10',
+    team1: 'team-2',
+    team2: 'team-9',
   });
 
   const handleClick = (key, value) => {
