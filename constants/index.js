@@ -108,7 +108,7 @@ export const teamsData = [
     },
     {
       id: 'team-4',
-      imgUrl: '/team/hafiz.jpeg',
+      imgUrl: '/team/hafiz.jpg',
       title: 'Hafiz Caniago',
       role: 'Fullstack Developer',
     },
